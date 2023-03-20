@@ -1,0 +1,14 @@
+{
+  "name": "mjv-semana-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercicio.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}

@@ -1,0 +1,37 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 5% 2em 5%;
+}
+
+.hero-img {
+    background-image: linear-gradient(0.01deg, #13131F 0.01%, rgba(19, 19, 31, 0) 99.99%), url("../../../../assets/12.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.hero-conteudo {
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hero-titulo {
+    color: #FeFBFB;
+    font-size: 48px;
+    padding: 10px;
+}
+
+.hero-mensagem {
+    width: 500px;
+    color: #C4C4C4;
+    font-size: 20px;
+    padding: 10px;
+}
