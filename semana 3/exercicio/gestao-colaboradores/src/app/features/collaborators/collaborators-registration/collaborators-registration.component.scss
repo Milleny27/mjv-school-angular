@@ -1,0 +1,56 @@
+* {
+    font-weight: bold;
+}
+
+.listagem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 220px;
+    border: 1px solid hsl(240, 24%, 10%);
+    border-radius: 10px;
+    margin: 15px 15px 15px 15px;
+}
+
+.img {
+    width: auto;
+    height: 40%;
+    padding: 2px;
+}
+
+.conteudo {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.id {
+    font-size: 12px;
+    padding: 2px;
+}
+
+.nome {
+    font-size: 12px;
+    padding: 2px;
+}
+
+.salario {
+    font-size: 12px;
+    padding: 2px;
+}
+
+.cargo {
+    font-size: 12px;
+    padding: 2px;
+}
