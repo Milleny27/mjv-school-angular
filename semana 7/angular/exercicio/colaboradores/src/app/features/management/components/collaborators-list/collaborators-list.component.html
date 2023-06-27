@@ -1,0 +1,16 @@
+<section class="listagem">
+    <div class="card" *ngFor="let colaborador of colaboradores">
+        <img src="{{ colaborador.imagem }}" class="img">
+        <div class="conteudo">
+            <h3 class="nome">Nome: {{ colaborador.nome }}</h3>
+            <button class="btn-card" (click)="detalhesColaborador(colaborador.id)"> Mostrar mais detalhes </button>
+            <!--
+            <div *ngIf="exibeDetalhes">
+                <p class="salario">Salário: {{ colaborador.salario }}</p>
+                <p class="cargo">Cargo: {{ colaborador.cargo }}</p>
+                <p [ngClass]="{ 'ativo': colaborador.isAtivo, 'inativo': !colaborador.isAtivo }">{{ colaborador.isAtivo ? 'Colaborador ativo' : 'Colaborador inativo' }}</p>
+            </div>
+            -->
+        </div>
+    </div>
+</section>

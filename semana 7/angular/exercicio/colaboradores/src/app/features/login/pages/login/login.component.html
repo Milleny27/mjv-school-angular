@@ -1,0 +1,13 @@
+    <section>
+    <div class="login-container">
+        <h3 class="login-title">LOGIN</h3>
+        <form class="login-form">
+            <input class="form" type="email" [(ngModel)]="email" placeholder="Digite o Email" name="email" required>
+            <input class="form" type="password" [(ngModel)]="senha" placeholder="Digite a senha" name="password" required>
+            <p class="error" *ngIf="error">Usuário/senha inválidos, tente novamente!</p>
+        </form>
+        <button
+            class="btn"
+            type="button" (click)="authenticate()">Entrar</button>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<section class="listagem">
+    <div class="card" *ngIf="collaborator">
+        <img src="{{ collaborator.imagem }}" class="img">
+        <div class="conteudo">
+            <h3 class="nome">Nome: {{ collaborator.nome }}</h3>
+            <p class="salario">Salário: {{ collaborator.salario }}</p>
+            <p class="cargo">Cargo: {{ collaborator.cargo }}</p>
+            <p [ngClass]="{ 'ativo': collaborator.isAtivo, 'inativo': !collaborator.isAtivo }">{{ collaborator.isAtivo ? 'Colaborador ativo' : 'Colaborador inativo' }}</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<header class="cabecalho">
+    <img class="cabecalho-img" src="../../../../assets/logo-mjv.png">
+    <nav>
+        <ul class="cabecalho-menu">
+            <li class="cabecalho-link" >
+                <a routerLink="home">Home</a>
+            </li>
+            <li class="cabecalho-link" *ngIf="user">
+                <a routerLink="collaborators-list">Colaboradores</a>
+            </li>
+            <li class="cabecalho-link" *ngIf="!user">
+                <a routerLink="login">Login</a>
+            </li>
+            <li class="cabecalho-link" *ngIf="user" >
+                <a (click)="exit()">Sair</a>
+            </li>
+        </ul>
+    </nav>
+</header>
